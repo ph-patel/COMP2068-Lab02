@@ -3,9 +3,9 @@ var app     = express();
 
 
 app.get('/', (req, res) => {
-    const method = req.params.method;
-    const x = parseInt(req.params.x);
-    const y = parseInt(req.params.y);
+    const method = req.query.method;
+    const x = parseInt(req.query.x);
+    const y = parseInt(req.query.y);
 
 switch(method)
         {
