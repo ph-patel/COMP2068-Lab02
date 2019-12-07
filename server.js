@@ -25,9 +25,11 @@ switch(method)
 
 });
 
-
-
-
-app.listen(3000 , () => {
-	console.log("Server started !!");
+app.listen(process.env.PORT, process.env.IP, function(){
+   console.log("App Started ! @devpriyesh");
 });
+
+
+// app.listen(3000 , () => {
+// 	console.log("Server started !!");
+// });
